@@ -1,14 +1,14 @@
     <section class="hero relative h-[90vh] flex items-center justify-center overflow-hidden">
 
         <video autoplay muted loop class="hero-video absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="/public/video/video.mp4" type="video/mp4">
+            <source src="./video/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
         <div class="hero-content relative z-10 text-center text-white px-8">
             <h1 class="text-4xl md:text-5xl font-bold text-mang-yellow mb-4 drop-shadow-lg">Mang Inasal</h1>
             <p class="text-xl md:text-2xl mb-8 drop-shadow-md">Authentic Filipino Grilled Chicken & Unli-Rice Experience</p>
-            <a href="#menu-preview" class="inline-block bg-mang-yellow text-mang-green font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
+            <a routerLink="#menu-preview" class="inline-block bg-mang-yellow text-mang-green font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
                 View Our Menu
             </a>
         </div>
@@ -84,13 +84,13 @@
             <div class="food-grid grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Food Item 1 -->
                 <div class="food-item bg-white border-2 border-mang-light rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                    <img src="public/img/porkBBQ.webp" 
                          alt="Chicken Inasal" 
                          class="w-full h-48 object-cover">
                     <div class="item-details p-6">
                         <p class="item-name text-xl font-bold text-mang-green mb-2">Chicken Inasal</p>
                         <p class="item-price text-lg font-semibold text-gray-700 mb-4">₱120.00</p>
-                        <a href="product.html">
+                        <a routerLink="/product">
                             <button class="add-to-cart-btn w-full bg-mang-yellow text-mang-green font-bold py-3 px-4 rounded-lg hover:bg-yellow-500 transition duration-300" data-product="Chicken Inasal">
                                 VIEW PRODUCT
                             </button>
@@ -100,13 +100,13 @@
                 
                 <!-- Food Item 2 -->
                 <div class="food-item bg-white border-2 border-mang-light rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                    <img src="\public\img\porkBBQ.webp" 
                          alt="Pork BBQ" 
                          class="w-full h-48 object-cover">
                     <div class="item-details p-6">
                         <p class="item-name text-xl font-bold text-mang-green mb-2">Pork BBQ</p>
                         <p class="item-price text-lg font-semibold text-gray-700 mb-4">₱85.00</p>
-                        <a href="product.html">
+                        <a routerLink="/product">
                             <button class="add-to-cart-btn w-full bg-mang-yellow text-mang-green font-bold py-3 px-4 rounded-lg hover:bg-yellow-500 transition duration-300" data-product="Pork BBQ">
                                 VIEW PRODUCT
                             </button>
@@ -116,13 +116,13 @@
                 
                 <!-- Food Item 3 -->
                 <div class="food-item bg-white border-2 border-mang-light rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                    <img src="/public/img/Halo-halo.png" 
                          alt="Halo-Halo" 
                          class="w-full h-48 object-cover">
                     <div class="item-details p-6">
                         <p class="item-name text-xl font-bold text-mang-green mb-2">Halo-Halo</p>
                         <p class="item-price text-lg font-semibold text-gray-700 mb-4">₱99.00</p>
-                        <a href="product.html">
+                        <a routerLink="/product">
                             <button class="add-to-cart-btn w-full bg-mang-yellow text-mang-green font-bold py-3 px-4 rounded-lg hover:bg-yellow-500 transition duration-300" data-product="Halo-Halo">
                                 VIEW PRODUCT
                             </button>

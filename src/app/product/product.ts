@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from "@angular/router";
 
 interface Products {
   id: number;
@@ -12,7 +13,7 @@ interface Products {
 
 @Component({
   selector: 'app-product',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './product.html',
   styleUrl: './product.css',
 })
@@ -27,7 +28,7 @@ export class Product implements OnInit {
       name: 'Chicken Inasal',
       price: 120.00,
       description: 'Tender chicken leg quarter marinated in calamansi, garlic, and annatto, grilled to smoky perfection.',
-      imageUrl: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Chicken-Inasal.webp',
       category: 'bestsellers'
     },
     {
@@ -35,7 +36,7 @@ export class Product implements OnInit {
       name: 'Pork BBQ',
       price: 85.00,
       description: 'Juicy pork skewers glazed in sweet-savory barbecue sauce, grilled over open flame.',
-      imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/porkBBQ.webp',
       category: 'bestsellers'
     },
     {
@@ -43,7 +44,7 @@ export class Product implements OnInit {
       name: 'Halo-Halo',
       price: 99.00,
       description: 'A refreshing Filipino dessert with crushed ice, sweet beans, leche flan, ube, and creamy milk.',
-      imageUrl: 'https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Halo-halo.png',
       category: 'bestsellers'
     },
     {
@@ -51,7 +52,7 @@ export class Product implements OnInit {
       name: 'Palabok',
       price: 110.00,
       description: 'Savory rice noodles topped with garlic sauce, shrimp, chicharrón, and egg — a comforting Pinoy classic.',
-      imageUrl: 'https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Palabok.webp',
       category: 'bestsellers'
     },
     {
@@ -59,7 +60,7 @@ export class Product implements OnInit {
       name: 'Bangus Sisig',
       price: 150.00,
       description: 'Sizzling boneless milkfish flakes sautéed with onions and chili, served on a hot plate with a citrusy kick.',
-      imageUrl: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Bangus-Sisig.webp',
       category: 'bestsellers'
     },
     {
@@ -67,7 +68,7 @@ export class Product implements OnInit {
       name: 'Pork Sisig',
       price: 160.00,
       description: 'Crispy chopped pork cheeks and liver tossed with onions, chili, and calamansi — a sizzling, savory delight.',
-      imageUrl: 'https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Pork-Sisig.webp',
       category: 'bestsellers'
     }
   ];
@@ -78,7 +79,7 @@ export class Product implements OnInit {
       name: 'Sizzling Liempo',
       price: 145.00,
       description: 'Thick-cut pork belly grilled and served sizzling with savory sauce and a side of calamansi.',
-      imageUrl: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Sizzling-Liempo.webp',
       category: 'favorites'
     },
     {
@@ -86,7 +87,7 @@ export class Product implements OnInit {
       name: 'Grilled Liempo',
       price: 140.00,
       description: 'Marinated pork belly grilled to a smoky char, tender on the inside and crisp on the outside.',
-      imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Grilled-Liempo.webp',
       category: 'favorites'
     },
     {
@@ -94,7 +95,7 @@ export class Product implements OnInit {
       name: 'Pork BBQ Fiesta',
       price: 250.00,
       description: 'A combo of 2 pork BBQ sticks, lumpiang togue, palabok, java rice, and soup — a true fiesta on a plate.',
-      imageUrl: 'https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Pork-BBQ-Fiesta.webp',
       category: 'favorites'
     },
     {
@@ -102,7 +103,7 @@ export class Product implements OnInit {
       name: 'TSM Pecho',
       price: 157.00,
       description: 'Tender pecho (chicken breast) meal with rice and soup — a Mang Inasal signature for hearty eaters.',
-      imageUrl: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/TSM-Pecho.webp',
       category: 'favorites'
     },
     {
@@ -110,7 +111,7 @@ export class Product implements OnInit {
       name: 'Chicken Inasal Family Size',
       price: 899.00,
       description: 'A generous serving of Chicken Inasal perfect for sharing — marinated and grilled to perfection.',
-      imageUrl: 'https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Chicken-Inasal-Family-Size.webp',
       category: 'favorites'
     },
     {
@@ -118,7 +119,7 @@ export class Product implements OnInit {
       name: 'Family Fiesta Combo',
       price: 499.00,
       description: 'A festive bundle of grilled favorites, sides, and rice — ideal for family gatherings or barkada meals.',
-      imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Family-Fiesta-Combo.webp',
       category: 'favorites'
     },
     {
@@ -126,7 +127,7 @@ export class Product implements OnInit {
       name: 'Palabok and Chicken Inasal',
       price: 296.00,
       description: 'A satisfying duo of savory palabok and smoky Chicken Inasal — the best of both worlds on one plate.',
-      imageUrl: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/public/img/Palabok-and-Chicken-Inasal.webp',
       category: 'favorites'
     }
   ];
